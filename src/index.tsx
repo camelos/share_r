@@ -1,3 +1,4 @@
+import './index.css';
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView, MotionValue } from 'framer-motion';
 import { ChevronDown, Quote, Brain, ScrollText, Tv, Zap, MoveRight } from 'lucide-react';
