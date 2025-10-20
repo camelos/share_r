@@ -1,5 +1,6 @@
 import './index.css';
 import React, { useRef, useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
 import { motion, useScroll, useTransform, useSpring, useInView, MotionValue } from 'framer-motion';
 import { ChevronDown, Quote, Brain, ScrollText, Tv, Zap, MoveRight } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
@@ -416,3 +417,10 @@ export default function HumorHistoryLongread() {
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+root.render(
+  <React.StrictMode>
+    <HumorHistoryLongread />
+  </React.StrictMode>
+);
